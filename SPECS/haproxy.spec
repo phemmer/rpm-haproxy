@@ -1,6 +1,8 @@
 %define haproxy_user    haproxy
 %define haproxy_group   %{haproxy_user}
 %define haproxy_home    %{_localstatedir}/lib/haproxy
+%define version 2.1.4
+%define release 1
 
 %if 0%{?rhel} > 6 && 0%{!?amzn2}
     %define dist %{expand:%%(/usr/lib/rpm/redhat/dist.sh --dist)}
