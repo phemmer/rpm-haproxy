@@ -100,7 +100,7 @@ USE_TFO=1
 USE_NS=1
 %endif
 
-%if 0%{_use_lua}
+%if %{with lua}
 USE_LUA="USE_LUA=1"
 %endif
 
